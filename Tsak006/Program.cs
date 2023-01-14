@@ -4,13 +4,13 @@
 // -3 -> нет
 // 7 -> нет
 
-Console.WriteLine("Введите целое первое число:");
+Console.WriteLine("Введите целое число:");
 int number = Convert.ToInt32(Console.ReadLine());
 if(number % 2 == 0)
 {
-    Console.WriteLine("Четно");
+    Console.WriteLine("Да");
 }
 else
 {
-    Console.WriteLine("Нечетно");
+    Console.WriteLine("Нет");
 }
