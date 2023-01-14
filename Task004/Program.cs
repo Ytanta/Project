@@ -12,7 +12,7 @@ Console.WriteLine("Введите целое первое число:");
 int number2 = Convert.ToInt32(Console.ReadLine());
 if (number0 > number1)
 {
-    if(number0>number2);
+    if(number0>number2)
     {
         Console.WriteLine($"Самое большое число {number0}");
     }
