@@ -3,7 +3,7 @@
 // возможных координат точек в этой четверти (x и y).
 
 Console.WriteLine("Введите номер четверти");
-string Num = (Console.ReadLine());
+string Num = (Console.ReadLine()!);
 string rangCoordinates = RangCoordinates(Num);
 Console.WriteLine(rangCoordinates);
 string RangCoordinates(string num)
