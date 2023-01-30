@@ -22,7 +22,7 @@ int Factorial(int num)
     {
         checked
         {
-            composition = sum * i;
+            composition = num * i;
         }
     }
     return composition;
