@@ -50,4 +50,4 @@ double[] arr = CreateArraeRndInt(4, -10, 10);
 PrintArrayDouble(arr);
 double maxdouble = maxDouble(arr);
 double mindouble = minDouble(arr);
-Console.Write($" -> {Math.Round(maxdouble * mindouble, 1)}");
+Console.Write($" -> {Math.Round(maxdouble - mindouble, 1)}");
