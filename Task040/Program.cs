@@ -15,8 +15,6 @@ int c = Convert.ToInt32(Console.ReadLine());
 
 bool TriangleExists (int a, int b, int c)
 {
-    if(a <b+c && b < a + c && c < a + b) return true;
-else return false;
-}
+return (a <b+c && b < a + c && c < a + b);
  bool res = TriangleExists ( a, b,  c);
  Console.WriteLine(res ? "Да": "Нет");
