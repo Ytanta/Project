@@ -26,3 +26,21 @@ int NumBinary(int num)
     }
     return numbrtBin;
 }
+
+// Console.WriteLine("Введите десятичное число: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+
+// string Binary(int num)
+// {
+// string res = string.Empty;
+// while (num > 0)
+// {
+// res = num % 2 + res;
+// num = num / 2;
+
+// }
+// return res;
+// }
+
+// string binary = Binary(number);
+// Console.Write($"{number} -> {binary}");
