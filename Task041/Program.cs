@@ -27,7 +27,7 @@ int[] CreateArraeInt(int m)
     for (int i = 0; i < m; i++)
     {
         Console.WriteLine("Введите число:");
-        array[i] = int.Parse(Console.ReadLine());
+        array[i] = int.Parse(Console.ReadLine()!);
     }
     return array;
 }
