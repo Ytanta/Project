@@ -43,7 +43,7 @@ void PrintArray(int[] arr)
 }
 int[] RemoteMatrixArray(int[,] matrix)
 {
-    int arraysize = matrix.GetLength(0) * matrix.GetLength(1);
+    int arraysize = matrix.Length;
     int[] array = new int[arraysize];
     int count = 0;
     for (int i = 0; i < matrix.GetLength(0); i++)
