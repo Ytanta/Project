@@ -44,8 +44,25 @@ int[,] SortDescendingRows(int[,] matrix)
         {
             arr[j] = matrix[i, j];
         }
-        Array.Sort(arr);
-        Array.Reverse(arr);
+        for (int k = 0; k < arr.Length -1; k++) 
+        {
+            int remote = arr[k];
+            for (int l = k; l < arr.Length; l++)
+            {
+                int index = k;
+                int min = arr[k];
+                if (arr[l] <= min)
+                {
+                    min = arr[l];
+                    index = l;
+                }
+                remote = arr[index];
+                arr[index] = arr[k];
+                arr[k] = remote;
+                
+
+            }
+        }
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
             matrix[i, j] = arr[j];

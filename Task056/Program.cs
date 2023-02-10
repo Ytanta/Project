@@ -64,17 +64,20 @@ int[] SumRows(int[,] matrix)
 }
 void NumberMaxRows(int[] arr)
 {
-    int min = 0;
-    int index = 0;
+    int min = arr[0];
+    int index =0;
     for (int i = 0; i < arr.Length; i++)
     {
+        
         if (arr[i] <= min)
         {
             min = arr[i];
             index = i;
         }
+       
+        
     }
-    Console.WriteLine($"{index +1} строка");
+    Console.WriteLine($"{index+1} строка");
 }
 
 
