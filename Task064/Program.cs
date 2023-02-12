@@ -5,19 +5,16 @@
 
 Console.WriteLine("Введите натуральное число");
 int number = Convert.ToInt32(Console.ReadLine());
-const string quote = "\""; 
+const string quote = "\"";
 Console.Write($"N = {number} ->  {quote}");
 NaturalNumber(number);
 Console.Write(quote);
 void NaturalNumber(int num)
 {
     {
-   
-    if(num==0) return;
-    
-
-    Console.Write($"{num}");
-    Console.Write(num > 1 ? ", " : "" );
-    NaturalNumber(num-1);
+        if (num == 0) return;
+        Console.Write($"{num}");
+        Console.Write(num > 1 ? ", " : "");
+        NaturalNumber(num - 1);
     }
 }
