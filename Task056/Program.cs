@@ -62,7 +62,7 @@ int[] SumRows(int[,] matrix)
     }
     return array;
 }
-void NumberMaxRows(int[] arr)
+int NumberMaxRows(int[] arr)
 {
     int min = arr[0];
     int index =0;
@@ -77,7 +77,7 @@ void NumberMaxRows(int[] arr)
        
         
     }
-    Console.WriteLine($"{index+1} строка");
+    return index+1;
 }
 
 
@@ -90,4 +90,5 @@ int[] sumRows = SumRows(array2D);
 Console.WriteLine();
 PrintArray(sumRows);
 Console.WriteLine();
-NumberMaxRows(sumRows);
+int numrows = NumberMaxRows(sumRows);
+Console.WriteLine($"{numrows} строка");
